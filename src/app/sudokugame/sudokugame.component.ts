@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SudokugameComponent implements OnInit {
 
-  constructor() { }
+  public dimension:number[];
+
+  constructor() { 
+    this.dimension = [9,9,9,9,9,9,9,9,9];
+  }
 
   ngOnInit(): void {
+    this.dimension = [9,9,9,9,9,9,9,9,9];
   }
 
 }
